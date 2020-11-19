@@ -327,7 +327,7 @@ public class CropImageView extends FrameLayout {
     View v = inflater.inflate(R.layout.crop_image_view, this, true);
 
     mImageView = v.findViewById(R.id.ImageView_image);
-    mImageView.setScaleType(ImageView.ScaleType.MATRIX);
+    mImageView.setScaleType(ImageView.ScaleType.FIT_XY);
 
     mCropOverlayView = v.findViewById(R.id.CropOverlayView);
     mCropOverlayView.setCropWindowChangeListener(
